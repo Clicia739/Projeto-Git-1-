@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+</head>
+<body>
+    <h1 id="inicio">Primeiros Passos com Git</h1>
+    <hr />
+    <img src="img/download.png" alt="imagem do aplicativo">
+
+    <h2>Uma breve historia do Git</h2>
+     <P>
+        Desde seu <strong><u>nascimento em 2005</u>,<i>Git</i> evoluiu e amadureceu para ser fácil de usar e ainda reter essas qualidades iniciais. Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível sistema de ramos para desenvolvimento não linear.
+        Como muitas coisas na vida, o Git começou com um pouco de destruição criativa e uma ardente controvérsia.</P>
+    <P>
+        O núcleo <strong>(kernel)</strong> do Linux é um projeto de código aberto com um escopo bastante grande. A maior parte da vida da manutenção do núcleo o Linux <strong>(1991-2002)</strong>, as mudanças no código eram compartilhadas como correções e arquivos. Em 2002, o projeto do núcleo do Linux começou usar uma DVCS proprietária chamada BitKeeper.</P>
+    <P>
+        Em 2005, a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa que desenvolveu BitKeeper quebrou em pedaços, e a ferramenta passou a ser paga. Isto alertou a comunidade que desenvolvia o Linux <strong>(e especialmente Linux Torvalds, o criador do Linux)</strong> a desenvolver a sua própria ferramenta baseada em lições aprendidas ao usar o BitKeeper. Algumas metas do novo sistema era os seguintes:</P>
+
+    <p>
+        <strong><u>DICAR:</u></strong><br>
+        O mais importante e ter mas do que um copia do codigos salvo no git.
+    </p>
+
+    <ul>
+        <li><a href="#h1">A importância do git</a></li>
+        <li><a href="#h2">O que é <i>Commit</i>?</a></li>
+        <li><a href="#h3">O que é <i>Clone</i>?</a></li>
+        <li><a href="#h4">Entendendo diferença de git,github</a></li>
+        <li><a href="#h5">Links de referências</a></li>
+    </ul>
+ 
+    <h2 id="h1">A importância do git</h2>
+    <small>
+        <ul>
+            <li>
+                <a href="#inicio">(Volta)</a>
+            </li>
+        </ul>
+    </small>
+    <p><strong><u>INSTRUÇÕES:</u></strong><br>
+        Utilizamos o <i>Git</i>  para controlo de versões em todas as fases programação do <u>projeto:</u> development, testing e deployment, 
+        mantendo desta forma a integridade do mesmo.
+
+        O <i>Git</i> é um sistema de controle de versões utilizado pela grande parte dos programadores. Inicialmente, o Git é utilizado sobretudo para o desenvolvimento de software, mas entretanto foi adotado por muitas outras áreas. </p>
+    
+<p>  
+        Quando o seu projeto chega à equipa de programação são efetuadas constantes alterações e atualizações, dando origem à criação de versões. As versões permitem-nos ter um histórico das alterações realizadas no código, oferecendo a possibilidade de voltar a qualquer ponto <strong>(commit)</strong> para ver como estava o código naquela data.
+
+        Desta forma, caso deseje uma versão do seu projeto sem um determinado desenvolvimento, você consegue voltar ao ponto que deseja, o chamado revert commit. Isto permite também o inverso/ voltar à implementação que retirou. </p>
+    
+<p> 
+        Além disso, sendo um controlador de versões, o <i>Git</i> permite o desenvolvimento do seu projeto por vários programadores em simultâneo, não havendo o risco de perda de informação. Ajuda a controlar o fluxo de novas funcionalidades entre os diferentes programadores, com ferramentas para análise e resolução de conflitos quando o mesmo arquivo é alterado por várias pessoas, permitindo ainda saber quais, porquê, quem e quando foram feitas as alterações. </p>
+         <img src="img/unnamed-300x129.png" alt="imagem da estrutura do app">
+
+    <h2 id="h2">O que é <i>Commit</i>?</h2>
+    <small>
+        <ul>
+            <li>
+                <a href="#inicio">(Volta)</a>
+            </li>
+        </ul>
+    </small>
+    <p><strong><u>INSTRUÇÕES:</u> </strong><br>
+        Os commits necessitam de ser armazenados é aí que entram os ramos <i>(branches)</i>. Um branch é como um contentor dos commits criados. Para um projeto são criados pelo menos três ramos, um para cada uma das fases do projeto.
+        Os branches permitem criar features que podem ser independentemente adicionadas à fase de deployment. </p>
+          <img src="img/unnamed-1-300x207.png" alt="imagem da estrutura do commit">
+
+<p>
+      Desta forma, podemos em simultâneo desenvolver features <u>(em branches independentes) </u> como carrinho, wishlist e newsletter para apenas colocar em deployment uma ou algumas destas features.
+      Estas são algumas das inúmeras funcionalidades que o Git oferece e   utilizamos no desenvolvimento do seu produto. </p>
+
+      <p>
+         Desta forma, podemos em simultâneo desenvolver features  <strong>(em branches independentes)</strong> como carrinho, wishlist e newsletter para apenas colocar em deployment uma ou algumas destas features.
+         Estas são algumas das inúmeras funcionalidades que o Git oferece e   utilizamos no desenvolvimento do seu produto. </p>
+         
+ <p> 
+         Em resumo, o <i>Git</i> oferece vários benefícios que agilizam o desenvolvimento de um projeto de software como rapidez nos processos pois permite a sua utilização somente em ambiente local, facilidade de fusão entre desenvolvimentos, consulta de alterações nos ficheiros, fiabilidade e um backup na cloud. </p>
+ 
+    <h2 id="h3">O que é <i>Clone</i>?</h2>
+    <small>
+        <ul>
+            <li>
+                <a href="#inicio">(Volta)</a>
+            </li>
+        </ul>
+    </small>
+    <p><strong><u>INSTRUÇÕES:</u> </strong><br>
+        O <i>git</i> clone é usado sobretudo para apontar para um  <u>repositório</u> existente e fazer um clone ou cópia deste repositório no novo diretório, em outro local. O <strong>repositório</strong> original pode estar localizado no sistema de arquivos local ou em protocolos com suporte a acesso por máquinas remotas. 
+
+    <h2 id="h4">Como é uma estrutura básica do git</h2>
+    <small>
+        <ul>
+            <li>
+                <a href="#inicio">(Volta)</a>
+            </li>
+        </ul>
+    </small>
+    <p><strong><u>INSTRUÇÕES:</u> </strong><br>
+        Agora que o repositório está pronto, vamos falar sobre a estrutura que é mantida pelo <i>GIT</i>. Cada <u>repositório</u> local consiste em três árvores: o diretório de trabalho que contém os arquivos reais; O índice que desempenha o papel de uma área de teste e o <strong>HEAD</strong> que é um ponteiro para o último commit feito pelo usuário.
+
+    <h2>Entendendo diferença de git, github</h2>
+    <p><strong><u>INSTRUÇÕES:</u></strong><br>
+        git é um software <i>VCS</i> local que permite aos desenvolvedores salvar snapshots de seus projetos ao longo do tempo. Geralmente é melhor para uso individual.  <u>GitHub</u> é uma plataforma baseada na web que incorpora os recursos de controle de versões do gitHub para que possam ser usados colaborativamente.
+
+    <h2 id="h5">Links infomações</h2>
+    <small>
+        <ul>
+            <li>
+                <a href="#inicio">(Volta)</a>
+            </li>
+        </ul>
+    </small>
+    <p><strong><u>Referências do Git:</u></strong><br>
+        Quer conhecer um pouco mais do Git cliquer no link aqui em baixo.</p>
+    <ul>
+        <li><a target="_blank" href="https://pt.wikipedia.org/wiki/GitHub">https://pt.wikipedia.org</a></li>
+        <li><a target="_blank" href="https://www.w3.org/International/i18n-activity/guidelines/github">http://w3c.org</a></li>
+    </ul>
+
+</body>
+</html>
